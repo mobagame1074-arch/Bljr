@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Mahfuz &amp; Silfa</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      14% { transform: scale(1.1); }
+      28% { transform: scale(1); }
+      42% { transform: scale(1.1); }
+      70% { transform: scale(1); }
+    }
+    .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-heartbeat { animation: heartbeat 2s ease-in-out infinite; }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .shimmer-text {
+      background: linear-gradient(90deg, #8B7355 0%, #D4AF37 25%, #8B7355 50%, #D4AF37 75%, #8B7355 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s linear infinite;
+    }
+    .ornament-border {
+      border-image: linear-gradient(45deg, #8B7355, #D4AF37, #8B7355) 1;
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+    }
+    .countdown-box {
+      background: linear-gradient(135deg, rgba(139, 115, 85, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app" class="w-full h-full overflow-auto" style="background: linear-gradient(135deg, #FAF7F2 0%, #F5EDE3 50%, #EDE4D8 100%);">
+   <!-- Cover Section -->
+   <section id="cover" class="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <div class="absolute top-0 left-0 w-32 h-32 opacity-20">
+     <svg viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0 Q 50 20 100 0 Q 80 50 100 100 Q 50 80 0 100 Q 20 50 0 0" fill="#8B7355" />
+     </svg>
+    </div>
+    <div class="absolute bottom-0 right-0 w-32 h-32 opacity-20 rotate-180">
+     <svg viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0 Q 50 20 100 0 Q 80 50 100 100 Q 50 80 0 100 Q 20 50 0 0" fill="#8B7355" />
+     </svg>
+    </div><!-- Floating petals -->
+    <div class="absolute top-20 left-10 text-4xl animate-float opacity-60">
+     🌸
+    </div>
+    <div class="absolute top-40 right-16 text-3xl animate-float delay-1 opacity-60">
+     🌺
+    </div>
+    <div class="absolute bottom-32 left-20 text-3xl animate-float delay-2 opacity-60">
+     🌷
+    </div>
+    <div class="text-center opacity-0 animate-fadeInUp">
+     <p class="text-sm tracking-[0.3em] text-amber-800 font-medium mb-4" style="font-family: 'Montserrat', sans-serif;">THE WEDDING OF</p>
+     <div class="relative my-8">
+      <h1 id="cover-names" class="text-5xl md:text-7xl shimmer-text" style="font-family: 'Cormorant Garamond', serif; font-weight: 700;">Mahfuz &amp; Silfa</h1>
+      <div class="flex items-center justify-center gap-4 mt-4">
+       <div class="h-px w-16 bg-gradient-to-r from-transparent to-amber-700"></div><span class="text-2xl animate-heartbeat">💑</span>
+       <div class="h-px w-16 bg-gradient-to-l from-transparent to-amber-700"></div>
+      </div>
+     </div>
+     <p class="text-amber-900 text-lg mt-6" style="font-family: 'Cormorant Garamond', serif; font-style: italic;">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya."</p>
+     <p class="text-amber-700 text-sm mt-2" style="font-family: 'Montserrat', sans-serif;">— QS. Ar-Rum: 21 —</p><!-- Guest Name Section on Cover -->
+     <div class="mt-8 opacity-0 animate-fadeInUp delay-1">
+      <div class="glass-effect rounded-3xl p-6 shadow-xl mb-8">
+       <p class="text-amber-600 uppercase tracking-widest text-sm mb-3" style="font-family: 'Montserrat', sans-serif;">👤 Undangan Untuk</p>
+       <p id="cover-invited-guest-name" class="text-3xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">istriku tercinta</p>
+      </div>
+     </div><!-- Countdown Section -->
+     <div class="countdown-box rounded-3xl p-8 shadow-lg opacity-0 animate-fadeInUp delay-2">
+      <p class="text-amber-700 uppercase tracking-widest text-sm mb-6" style="font-family: 'Montserrat', sans-serif;">Acara Dimulai Dalam</p>
+      <div class="grid grid-cols-4 gap-3">
+       <div class="bg-white rounded-xl p-4">
+        <p id="days" class="text-3xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+        <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Hari</p>
+       </div>
+       <div class="bg-white rounded-xl p-4">
+        <p id="hours" class="text-3xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+        <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Jam</p>
+       </div>
+       <div class="bg-white rounded-xl p-4">
+        <p id="minutes" class="text-3xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+        <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Menit</p>
+       </div>
+       <div class="bg-white rounded-xl p-4">
+        <p id="seconds" class="text-3xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+        <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Detik</p>
+       </div>
+      </div>
+     </div><button onclick="openInvitation()" class="mt-10 px-8 py-3 bg-gradient-to-r from-amber-700 to-amber-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style="font-family: 'Montserrat', sans-serif;"> <span class="flex items-center gap-2"> <span>Buka Undangan</span> <span>💌</span> </span> </button>
+    </div>
+   </section><!-- Main Content (Hidden initially) -->
+   <div id="main-content" class="hidden">
+    <!-- Opening Greeting Section -->
+    <section class="py-16 px-6 bg-gradient-to-b from-amber-50 to-transparent">
+     <div class="max-w-2xl mx-auto">
+      <div class="glass-effect rounded-3xl p-8 shadow-xl text-center">
+       <p class="text-2xl text-amber-900 mb-6" style="font-family: 'Cormorant Garamond', serif; font-style: italic;">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+       <div class="h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-6"></div>
+       <p class="text-amber-800 text-lg leading-relaxed" style="font-family: 'Cormorant Garamond', serif;">Dengan penuh kebahagiaan dan syukur kepada Allah Swt atas nikmat dan karunia-Nya, kami dengan segenap hati mengundang Anda untuk merayakan momen istimewa kami.</p>
+      </div>
+     </div>
+    </section><!-- Couple Section -->
+    <section class="py-16 px-6">
+     <div class="max-w-2xl mx-auto text-center">
+      <p id="welcome-text" class="text-amber-800 mb-8 opacity-0 animate-fadeInUp" style="font-family: 'Montserrat', sans-serif;">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:</p><!-- Groom -->
+      <div class="glass-effect rounded-3xl p-8 mb-8 shadow-xl opacity-0 animate-fadeInUp delay-1">
+       <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-200 to-amber-100 flex items-center justify-center text-6xl shadow-inner">
+        🤵
+       </div>
+       <h2 id="groom-name" class="text-4xl text-amber-900 mb-2" style="font-family: 'Cormorant Garamond', serif; font-weight: 700;">Mahfuz</h2>
+       <p class="text-amber-700" style="font-family: 'Montserrat', sans-serif;">Putra dari</p>
+       <p class="text-amber-900 font-semibold text-lg" style="font-family: 'Cormorant Garamond', serif;">Bapak Ibramsyah &amp; Ibu Mariana</p>
+      </div>
+      <div class="text-5xl my-6 animate-heartbeat">
+       💕
+      </div><!-- Bride -->
+      <div class="glass-effect rounded-3xl p-8 shadow-xl opacity-0 animate-fadeInUp delay-2">
+       <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-200 to-pink-100 flex items-center justify-center text-6xl shadow-inner">
+        👰
+       </div>
+       <h2 id="bride-name" class="text-4xl text-amber-900 mb-2" style="font-family: 'Cormorant Garamond', serif; font-weight: 700;">Silfa</h2>
+       <p class="text-amber-700" style="font-family: 'Montserrat', sans-serif;">Putri dari</p>
+       <p class="text-amber-900 font-semibold text-lg" style="font-family: 'Cormorant Garamond', serif;">Bapak Pani &amp; Ibu Susilawati</p>
+      </div>
+     </div>
+    </section><!-- Event Details -->
+    <section class="py-16 px-6">
+     <div class="max-w-2xl mx-auto">
+      <h3 class="text-3xl text-amber-900 mb-8 text-center" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">📅 Waktu &amp; Tempat</h3><!-- Countdown Section -->
+      <div class="glass-effect rounded-3xl p-8 shadow-xl">
+       <div class="mb-8 text-center">
+        <p class="text-amber-600 uppercase tracking-widest text-sm mb-6" style="font-family: 'Montserrat', sans-serif;">Acara Dimulai Dalam</p>
+        <div class="grid grid-cols-4 gap-3">
+         <div class="bg-white rounded-xl p-3">
+          <p id="event-days" class="text-2xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+          <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Hari</p>
+         </div>
+         <div class="bg-white rounded-xl p-3">
+          <p id="event-hours" class="text-2xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+          <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Jam</p>
+         </div>
+         <div class="bg-white rounded-xl p-3">
+          <p id="event-minutes" class="text-2xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+          <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Menit</p>
+         </div>
+         <div class="bg-white rounded-xl p-3">
+          <p id="event-seconds" class="text-2xl font-bold text-amber-900" style="font-family: 'Cormorant Garamond', serif;">0</p>
+          <p class="text-xs text-amber-700 mt-1" style="font-family: 'Montserrat', sans-serif;">Detik</p>
+         </div>
+        </div>
+       </div>
+       <div class="h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-6"></div>
+       <div class="text-center">
+        <p class="text-amber-600 uppercase tracking-widest text-sm mb-2" style="font-family: 'Montserrat', sans-serif;">Resepsi</p>
+        <p class="text-3xl text-amber-900 font-bold" style="font-family: 'Cormorant Garamond', serif;">Rabu, 1 April 2026</p>
+        <p class="text-amber-700 text-lg mt-2" style="font-family: 'Montserrat', sans-serif;">Pukul 08:00 WITA - Selesai</p>
+        <div class="h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-6"></div>
+        <p class="text-amber-600 uppercase tracking-widest text-sm mb-2" style="font-family: 'Montserrat', sans-serif;">Lokasi</p>
+<p class="text-xl text-amber-900" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">Jl. Brigjen Hj. Hasan Basri</p>
+        <p class="text-amber-700" style="font-family: 'Montserrat', sans-serif;">Tapus RT 3 gang berkah mahfuz amin</p><a href="https://maps.app.goo.gl/HCd6DNecaPVb7Hu49?g_st=ic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style="font-family: 'Montserrat', sans-serif;"> <span>📍</span> <span>Buka Google Maps</span> </a>
+        <p class="text-xl text-amber-900" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">Jl. Brigjen Hj. Hasan Basri</p>
+        <p class="text-amber-700" style="font-family: 'Montserrat', sans-serif;">Tapus RT 4 gang selalu damai silfa</p><a href="https://maps.app.goo.gl/VuLkzvQ85aWkBaMH6?g_st=ic target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style="font-family: 'Montserrat', sans-serif;"> <span>📍</span> <span>Buka Google Maps</span> </a>
+
+       </div>
+      </div>
+     </div>
+    </section><!-- Gift Section -->
+    <section class="py-16 px-6 bg-gradient-to-b from-transparent via-amber-50/50 to-transparent">
+     <div class="max-w-2xl mx-auto text-center">
+      <h3 class="text-3xl text-amber-900 mb-4" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">🎁 Kirim Hadiah</h3>
+      <p class="text-amber-700 mb-8" style="font-family: 'Montserrat', sans-serif;">Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika Anda ingin memberikan tanda kasih, kami menyediakan opsi berikut:</p>
+      <div class="glass-effect rounded-3xl p-8 shadow-xl">
+       <div class="flex items-center justify-center gap-3 mb-4">
+        <span class="text-4xl">💙</span> <span class="text-2xl font-bold text-blue-600" style="font-family: 'Montserrat', sans-serif;">DANA</span>
+       </div>
+       <p class="text-amber-900 font-semibold text-lg mb-2" style="font-family: 'Montserrat', sans-serif;">Mahfuz Amin</p>
+       <p class="text-amber-700 text-lg mb-4" style="font-family: 'Montserrat', sans-serif;">085753716105</p>
+       <p class="text-amber-800 text-lg mb-4" style="font-family: 'Cormorant Garamond', serif;">Kirim via DANA</p><a href="https://link.dana.id/minta?full_url=https://qr.dana.id/v1/.13153727" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" style="font-family: 'Montserrat', sans-serif;"> <span>💸</span> <span>Kirim via DANA</span> </a>
+      </div>
+     </div>
+    </section><!-- Attendance & Wishes Section -->
+    <section class="py-16 px-6">
+     <div class="max-w-2xl mx-auto">
+      <h3 class="text-3xl text-amber-900 mb-8 text-center" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">📝 Konfirmasi Kehadiran &amp; Doa</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+       <!-- Form Section -->
+       <div class="glass-effect rounded-3xl p-8 shadow-xl">
+        <form id="attendance-form" onsubmit="handleAttendanceSubmit(event)">
+         <!-- Name Input -->
+         <div class="mb-6">
+          <label class="block text-amber-800 font-semibold mb-2" style="font-family: 'Montserrat', sans-serif;">Nama Anda</label> <input type="text" id="guest-name" placeholder="Masukkan nama Anda" required class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-500 transition-colors" style="font-family: 'Montserrat', sans-serif;">
+         </div><!-- Attendance Confirmation -->
+         <div class="mb-6">
+          <label class="block text-amber-800 font-semibold mb-3" style="font-family: 'Montserrat', sans-serif;">Apakah Anda bisa hadir?</label>
+          <div class="flex gap-4">
+           <label class="flex items-center gap-2 cursor-pointer"> <input type="radio" name="attendance" value="hadir" required class="w-4 h-4"> <span style="font-family: 'Montserrat', sans-serif;" class="text-amber-700">✨ Insya Allah Hadir</span> </label> <label class="flex items-center gap-2 cursor-pointer"> <input type="radio" name="attendance" value="tidak-hadir" class="w-4 h-4"> <span style="font-family: 'Montserrat', sans-serif;" class="text-amber-700">💙 Tidak Bisa Hadir</span> </label>
+          </div>
+         </div><!-- Wishes/Doa -->
+         <div class="mb-6">
+          <label class="block text-amber-800 font-semibold mb-2" style="font-family: 'Montserrat', sans-serif;">Kirim Doa &amp; Ucapan</label> <textarea id="guest-wishes" placeholder="Tulis doa dan ucapan terbaik Anda untuk kami..." rows="4" class="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:outline-none focus:border-amber-500 transition-colors resize-none" style="font-family: 'Montserrat', sans-serif;"></textarea>
+         </div><!-- Submit Button --> <button type="submit" id="submit-btn" class="w-full px-6 py-3 bg-gradient-to-r from-amber-700 to-amber-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-semibold" style="font-family: 'Montserrat', sans-serif;"> 📤 Kirim Konfirmasi </button>
+        </form><!-- Success Message -->
+        <div id="success-message" class="hidden mt-6 p-4 bg-green-100 border-2 border-green-500 rounded-lg text-center">
+         <p class="text-green-700 font-semibold" style="font-family: 'Montserrat', sans-serif;">✅ Terima kasih! Konfirmasi Anda telah diterima</p>
+        </div>
+       </div><!-- Summary Section -->
+       <div class="glass-effect rounded-3xl p-8 shadow-xl">
+        <h4 class="text-2xl text-amber-900 font-bold mb-6 text-center" style="font-family: 'Cormorant Garamond', serif;">📊 Ringkasan Konfirmasi</h4>
+        <div class="space-y-4">
+         <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+          <p class="text-gray-600 text-sm" style="font-family: 'Montserrat', sans-serif;">Akan Hadir</p>
+          <p id="count-hadir" class="text-4xl font-bold text-green-600" style="font-family: 'Cormorant Garamond', serif;">0</p>
+         </div>
+         <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+          <p class="text-gray-600 text-sm" style="font-family: 'Montserrat', sans-serif;">Tidak Bisa Hadir</p>
+          <p id="count-tidak-hadir" class="text-4xl font-bold text-blue-600" style="font-family: 'Cormorant Garamond', serif;">0</p>
+         </div>
+         <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+          <p class="text-gray-600 text-sm" style="font-family: 'Montserrat', sans-serif;">Total Konfirmasi</p>
+          <p id="count-total" class="text-4xl font-bold text-purple-600" style="font-family: 'Cormorant Garamond', serif;">0</p>
+         </div>
+        </div>
+        <div class="mt-8 pt-6 border-t-2 border-amber-200">
+         <h5 class="text-lg text-amber-900 font-bold mb-4" style="font-family: 'Cormorant Garamond', serif;">💌 Doa Terakhir</h5>
+         <div id="latest-wish" class="bg-amber-50 rounded-lg p-4 italic text-amber-800 min-h-20" style="font-family: 'Cormorant Garamond', serif;">
+          <p class="text-gray-500 text-center" style="font-family: 'Montserrat', sans-serif;">Belum ada doa yang diterima</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Closing -->
+    <section class="py-16 px-6">
+     <div class="max-w-2xl mx-auto text-center">
+      <div class="glass-effect rounded-3xl p-8 shadow-xl">
+       <p class="text-amber-600 uppercase tracking-widest text-sm mb-6" style="font-family: 'Montserrat', sans-serif;">Terima Kasih</p>
+       <p class="text-amber-800 text-lg mb-8" style="font-family: 'Cormorant Garamond', serif; font-style: italic;">"Kami sangat berterima kasih atas kehadiran dan doa restu Anda yang telah membuat hari istimewa kami semakin bermakna. Semoga Allah senantiasa memberikan keberkahan bagi kita semua."</p>
+       <div class="h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent my-6"></div>
+       <p class="text-amber-900 font-semibold text-2xl mb-4" style="font-family: 'Cormorant Garamond', serif;">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+       <div class="flex items-center justify-center gap-4 mt-8">
+        <div class="h-px w-16 bg-gradient-to-r from-transparent to-amber-700"></div><span class="text-3xl">🤍</span>
+        <div class="h-px w-16 bg-gradient-to-l from-transparent to-amber-700"></div>
+       </div>
+       <p class="text-3xl mt-8 shimmer-text" style="font-family: 'Cormorant Garamond', serif; font-weight: 700;">Mahfuz &amp; Silfa</p>
+       <p class="text-amber-700 text-sm mt-6" style="font-family: 'Montserrat', sans-serif;">Maret 2026</p>
+      </div>
+     </div>
+    </section><!-- Footer -->
+    <footer class="py-8 text-center">
+     <p class="text-amber-600 text-sm" style="font-family: 'Montserrat', sans-serif;">Made with 💕 for Mahfuz &amp; Silfa</p>
+    </footer>
+   </div>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      groom_name: 'Mahfuz',
+      bride_name: 'Silfa',
+      welcome_text: 'Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:',
+      invited_guest_name: 'Tamu Tercinta',
+      primary_color: '#92400e',
+      secondary_color: '#d97706',
+      background_color: '#FAF7F2',
+      text_color: '#78350f',
+      accent_color: '#f59e0b'
+    };
+    
+    let allGuestData = [];
+    
+    // Data handler for SDK
+    const dataHandler = {
+      onDataChanged(data) {
+        allGuestData = data;
+        updateSummary();
+      }
+    };
+    
+    // Update summary statistics
+    function updateSummary() {
+      const hadir = allGuestData.filter(g => g.attendance === 'hadir').length;
+      const tidakHadir = allGuestData.filter(g => g.attendance === 'tidak-hadir').length;
+      const total = allGuestData.length;
+      
+      document.getElementById('count-hadir').textContent = hadir;
+      document.getElementById('count-tidak-hadir').textContent = tidakHadir;
+      document.getElementById('count-total').textContent = total;
+      
+      // Show latest wish with guest name
+      if (allGuestData.length > 0) {
+        const latestGuest = allGuestData[allGuestData.length - 1];
+        if (latestGuest.wishes) {
+          document.getElementById('latest-wish').innerHTML = `
+            <p class="font-semibold text-amber-900 mb-2" style="font-family: 'Montserrat', sans-serif;">— ${latestGuest.guest_name}</p>
+            <p style="font-family: 'Cormorant Garamond', serif;">"${latestGuest.wishes}"</p>
+          `;
+        }
+      }
+    }
+    
+    // Open invitation function
+    function openInvitation() {
+      document.getElementById('cover').classList.add('hidden');
+      document.getElementById('main-content').classList.remove('hidden');
+      
+      // Trigger animations
+      const animatedElements = document.querySelectorAll('#main-content .animate-fadeInUp');
+      animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        setTimeout(() => {
+          el.style.opacity = '1';
+        }, 100);
+      });
+    }
+    
+    // Config change handler
+    async function onConfigChange(config) {
+      const groomName = config.groom_name || defaultConfig.groom_name;
+      const brideName = config.bride_name || defaultConfig.bride_name;
+      const welcomeText = config.welcome_text || defaultConfig.welcome_text;
+      const guestName = config.invited_guest_name || defaultConfig.invited_guest_name;
+      
+      // Update cover names
+      const coverNames = document.getElementById('cover-names');
+      if (coverNames) coverNames.textContent = `${groomName} & ${brideName}`;
+      
+      // Update cover invited guest name
+      const coverGuestEl = document.getElementById('cover-invited-guest-name');
+      if (coverGuestEl) coverGuestEl.textContent = guestName;
+      
+      // Update individual names
+      const groomEl = document.getElementById('groom-name');
+      if (groomEl) groomEl.textContent = groomName;
+      
+      const brideEl = document.getElementById('bride-name');
+      if (brideEl) brideEl.textContent = brideName;
+      
+      // Update welcome text
+      const welcomeEl = document.getElementById('welcome-text');
+      if (welcomeEl) welcomeEl.textContent = welcomeText;
+      
+      // Update invited guest name
+      const guestNameEl = document.getElementById('invited-guest-name');
+      if (guestNameEl) guestNameEl.textContent = guestName;
+    }
+    
+    // Map to capabilities
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.primary_color || defaultConfig.primary_color,
+            set: (value) => {
+              config.primary_color = value;
+              window.elementSdk.setConfig({ primary_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+    
+    // Map to edit panel values
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['groom_name', config.groom_name || defaultConfig.groom_name],
+        ['bride_name', config.bride_name || defaultConfig.bride_name],
+        ['welcome_text', config.welcome_text || defaultConfig.welcome_text],
+        ['invited_guest_name', config.invited_guest_name || defaultConfig.invited_guest_name]
+      ]);
+    }
+    
+    // Handle attendance form submission
+    async function handleAttendanceSubmit(event) {
+      event.preventDefault();
+      
+      const guestName = document.getElementById('guest-name').value;
+      const attendance = document.querySelector('input[name="attendance"]:checked').value;
+      const wishes = document.getElementById('guest-wishes').value;
+      
+      // Disable submit button during upload
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.disabled = true;
+      
+      // Save to data SDK
+      const result = await window.dataSdk.create({
+        guest_name: guestName,
+        attendance: attendance,
+        wishes: wishes,
+        created_at: new Date().toISOString()
+      });
+      
+      submitBtn.disabled = false;
+      
+      if (result.isOk) {
+        // Show success message
+        const form = document.getElementById('attendance-form');
+        const successMsg = document.getElementById('success-message');
+        
+        form.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+        
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          form.reset();
+          form.classList.remove('hidden');
+          successMsg.classList.add('hidden');
+        }, 5000);
+      } else {
+        alert('Gagal menyimpan data. Silakan coba lagi.');
+      }
+    }
+    
+
+    // Initialize SDKs
+    async function initializeApp() {
+      if (window.dataSdk) {
+        await window.dataSdk.init(dataHandler);
+      }
+      
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange,
+          mapToCapabilities,
+          mapToEditPanelValues
+        });
+      }
+      
+      // Start countdown
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    }
+    
+    // Countdown function
+    function updateCountdown() {
+      // Target date: April 1, 2026 at 08:00
+      const targetDate = new Date('2026-04-01T08:00:00').getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+      
+      let days = 0, hours = 0, minutes = 0, seconds = 0;
+      
+      if (difference > 0) {
+        days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        seconds = Math.floor((difference % (1000 * 60)) / 1000);
+      }
+      
+      // Update cover countdown elements
+      const coverElements = [
+        { id: 'days', value: days },
+        { id: 'hours', value: String(hours).padStart(2, '0') },
+        { id: 'minutes', value: String(minutes).padStart(2, '0') },
+        { id: 'seconds', value: String(seconds).padStart(2, '0') }
+      ];
+      
+      // Update event details countdown elements
+      const eventElements = [
+        { id: 'event-days', value: days },
+        { id: 'event-hours', value: String(hours).padStart(2, '0') },
+        { id: 'event-minutes', value: String(minutes).padStart(2, '0') },
+        { id: 'event-seconds', value: String(seconds).padStart(2, '0') }
+      ];
+      
+      [...coverElements, ...eventElements].forEach(el => {
+        const elem = document.getElementById(el.id);
+        if (elem) elem.textContent = el.value;
+      });
+    }
+    
+    initializeApp();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dad51228039ab62',t:'MTc3MzI2MTAyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
